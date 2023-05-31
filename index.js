@@ -5,6 +5,8 @@ let passwordLength = 15
 
 let passwordOneEl = document.getElementById("passwordOne-el")
 let passwordTwoEl = document.getElementById("passwordTwo-el")
+let copyPasswordOneBtn = document.getElementById("copyPasswordOne-btn")
+let copyPasswordTwoBtn = document.getElementById("copyPasswordTwo-btn")
 
 function generatePasswords() {
     //console.log(passwordOneEl)
@@ -20,4 +22,16 @@ function generatePasswords() {
     }
 }
 
+function copyPasswordOne() {
+    let copyText = document.getElementById("passwordOne-el")
+    navigator.clipboard.writeText(copyText.textContent);
+    copyPasswordOneBtn.textContent = "Password copied!"
+    copyPasswordTwoBtn.textContent = "Copy password"
+}
 
+function copyPasswordTwo() {
+    let copyText = document.getElementById("passwordTwo-el")
+    navigator.clipboard.writeText(copyText.textContent);
+    copyPasswordTwoBtn.textContent = "Password copied!"
+    copyPasswordOneBtn.textContent = "Copy password"
+}
