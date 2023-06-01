@@ -6,6 +6,30 @@
         <h1>Generate a<br>
         <span style="color:#4ADF86;">random password</span></h1>
         <p id="supportingText-el">Never use an insecure password again.</p>
+        <div class="passwordOptions">
+            <label for="passwordLength">Password length:
+                <select name="passwordLength" id="passwordLength-sel">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15" selected>15</option>
+                    <option value="16">16</option>
+                </select>
+            </label><br />
+            <label for="useUppercase">
+                <input type="checkbox" id="useUppercase-box" name="useUppercase" value="yes" checked> Uppercase
+            </label>
+            <label for="useNumbers">
+                <input type="checkbox" id="useNumbers-box" name="useNumbers" value="yes" checked> Numbers
+            </label>
+            <label for="useSymbols">
+                <input type="checkbox" id="useSymbols-box" name="useSymbols" value="yes" checked> Symbols
+            </label>
+        </div>
         <button id="generatePassword-btn" onclick="generatePasswords()">Generate passwords</button>
         <button id="copyPasswordOne-btn" onclick="copyPasswordOne()">Copy password</button>
         <button id="copyPasswordTwo-btn" onclick="copyPasswordTwo()">Copy password</button>
@@ -14,6 +38,7 @@
         <div id="boxTwo-el"></div>
         <div id="passwordOne-el"></div>
         <div id="passwordTwo-el"></div>
+        <div class="version"><p id="version-el"></p></div>
         <script src="index.js"></script>
     </body>
 </html>
