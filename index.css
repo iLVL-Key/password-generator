@@ -170,7 +170,7 @@ hr {
 
 div.version {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     right: 10px;
     width: 100%;
     text-align: right;

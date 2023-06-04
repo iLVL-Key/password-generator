@@ -1,7 +1,5 @@
-let version = "1.1.1"
-
-//const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
-//"/"];
+const version = "1.1.2"
+const versionEl = document.getElementById("version-el").textContent = "Version " + version
 
 const lettersLowercase =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
@@ -11,16 +9,14 @@ const numbers =["0","1","2","3","4","5","6","7","8","9"];
 
 const symbols =["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
-let useUppercaseBox = document.getElementById("useUppercase-box");
-let useNumbersBox = document.getElementById("useNumbers-box");
-let useSymbolsBox = document.getElementById("useSymbols-box");
+const useUppercaseBox = document.getElementById("useUppercase-box");
+const useNumbersBox = document.getElementById("useNumbers-box");
+const useSymbolsBox = document.getElementById("useSymbols-box");
 
-let passwordOneEl = document.getElementById("passwordOne-el")
-let passwordTwoEl = document.getElementById("passwordTwo-el")
-let copyPasswordOneBtn = document.getElementById("copyPasswordOne-btn")
-let copyPasswordTwoBtn = document.getElementById("copyPasswordTwo-btn")
-
-let versionEl = document.getElementById("version-el").textContent = "Version " + version
+const passwordOneEl = document.getElementById("passwordOne-el")
+const passwordTwoEl = document.getElementById("passwordTwo-el")
+const copyPasswordOneBtn = document.getElementById("copyPasswordOne-btn")
+const copyPasswordTwoBtn = document.getElementById("copyPasswordTwo-btn")
 
 function generatePasswords() {
     let passwordLength = document.getElementById("passwordLength-sel").value;
